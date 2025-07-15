@@ -1,10 +1,11 @@
 // Main React component
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Schedule from './pages/Schedule';
 import Dashboard from './pages/Dashboard';
+import EmployeeMap from './pages/EmployeeMap';
+import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Link to="/register" style={{ marginRight: '1rem' }}>Register</Link>
         <Link to="/schedule" style={{ marginRight: '1rem' }}>Schedule</Link>
         <Link to="/dashboard">Dashboard</Link>
+        <Link to="/employeemap">EmployeeMap</Link>
       </nav>
 
       <main style={{ padding: '1rem' }}>
@@ -22,6 +24,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/employeemap" element={<EmployeeMap />} />
         </Routes>
       </main>
     </div>
