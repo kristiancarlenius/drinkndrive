@@ -1,6 +1,7 @@
 // Main React component
 import React from 'react';
 import Login from './pages/Login';
+import Schedule from './pages/Schedule';
 import Register from './pages/Register';
 import Schedule from './pages/Schedule';
 import Dashboard from './pages/Dashboard';
